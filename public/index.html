@@ -3,51 +3,70 @@
 <html>
 <head>
   <title>Expense Tracker Pro</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
   <link href='' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <h1>Expense Tracker Pro</h1>
 
-  <form id="newExpenseform">
+  <div id="expense-form">
+      <h2>Expense Form</h2>
+
+  <form id="expenseForm">
 
     <label for="#fmIncome">Income Amount</label>
-    <input name="#fmIncome"> type="text">
-
-    <label for="#fmDate">Date</label> -->
-
-    <label for="#fmMonth">Month</label>
-    <input name="#fmMonth"> type="">
-
-    <label for="#fmDay">Day</label>
-    <input name="#fmDay"> type="">
-
-    <label for="#fmYear">Year</label>
-    <input name="#fmYear"> type="">
-
-    <label for="#fmExpense">Expense</label>
-    <input name="#fmExpense"> type="text">
-
-    <label for="#fmCost">Cost</label>
-    <input name="#fmCost"> <!-- type=""> -->
-
-    <label for="#fmCategory">Category</label>
-    <input name="#fmCategory"> <!-- type=""> -->
+    <input name="fmIncome" type="text">
 
     <label for="#fmDate">Date</label>
-    <input name="#fmDate"> type="">
 
+    <label for="#fmMonth">Month</label>
+    <input name="fmMonth" type="">
+
+    <label for="#fmDay">Day</label>
+    <input name="fmDay" type="">
+
+    <label for="#fmYear">Year</label>
+    <input name="fmYear" type="">
+
+    <label for="#fmExpense">Expense</label>
+    <input name="fmExpense" type="text">
+
+    <label for="#fmCost">Cost</label>
+    <input name="fmCost" <!-- type=""> -->
+
+    <label for="#fmCategory">Category</label>
+    <input name="fmCategory" <!-- type="">
+
+    <label for="#fmDate">Date</label>
+    <input name="fmDate" type="">
     <p></p>
-    <button type ="#tableRender">Add To Table</button>
-    </p></p>
     <button type ="#viewGraph">View Graph</button>
   </form>
 
-  <table id=""
+  <div id="table-container">
+      <h3>Expense Table</h3>
+        <table id="expenseTable">
+
+      <tr class="head">
+        <th></th>
+        <th>Date</th>
+        <th>Category</th>
+        <th>Expense</th>
+      </tr>
+      <tr class="newTr">
+        <td id="#tdDate">Date</td>
+        <td id="#tdCategory">Category</td>
+        <td id="#tdExpense">Expense</td>
+      </tr>
+    </table>
+  </div>
+
+    <button type ="#tableRender">Add To Table</button>
 
   <footer></footer>
 
-  <script type="text/javascript" src=""></script>
+  <script type="text/javascript" src="js/expenseTracker.js"></script>
+  <script type="text/jQuery" src="js/jquery.js"></script>
 
 </body>
 </html>
