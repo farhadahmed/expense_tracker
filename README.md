@@ -1,0 +1,1 @@
+This web app will allow users to input data about expenses they have incurred and will then use that data to output a table of their expenses as well as output a line graph and pie chart showing the user how much they have spent and on what kinds of goods/services.
