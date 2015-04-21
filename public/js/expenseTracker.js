@@ -22,18 +22,6 @@ $(document).ready(function() {
 
     expenses.push(new Transaction(txnDate, txnExpense, txnCost));
     console.log(expenses[0]);
-
   })
+
 });
-
-
-//
-//  $('#tableRender').click(function() {
-//    expenses.push(new Transaction(3, 2, 1));
-//    //expenses.push(new Transaction(txnDate, fmExpense.value, fmCost.value));
-//    console.log(expenses);
-//  })
-//}
-
-
-
