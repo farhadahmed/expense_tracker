@@ -10,8 +10,17 @@ $(document).ready(function() {
   };
 
   $('#tableRender').click(function() {
-    var testInput = $("input[name='fmMonth']").val();
-    alert(testInput);
+    var txnMonth = $("input[name='fmMonth']").val();
+    var txnDay = $("input[name='fmDay']").val();
+    var txnYear = $("input[name='fmYear']").val();
+    var txnDate = txnMonth + txnDay + txnYear;
+
+    var txnExpense = $("input[name='fmExpense']").val();
+    var txnCost = $("input[name='fmCost']").val();
+
+    expenses.push(new Transaction(txnDate, txnExpense, txnCost));
+    alert(expenses[0]);
+
   })
 });
 
