@@ -3,70 +3,133 @@
 <html>
 <head>
   <title>Expense Tracker Pro</title>
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel='stylesheet' type='text/css' 'href="css/main.css'>
   <link href='' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <h1>Expense Tracker Pro</h1>
-
-  <div id="expense-form">
+   <div id="expense-form">
       <h2>Expense Form</h2>
 
-  <form id="expenseForm">
+  <form id='expenseForm'>
+    <fieldset>
+    <label for='fmIncome'>Income Amount</label>
+    <input name='fmIncome' type='text'>
+<!-- <label for="#fmDate">Date</label> -->
+    <label for='fmMonth'>Month</label>
+    <select name='fmMonth'>
+        <option value='01'>01</option>
+        <option value='02'>02</option>
+        <option value='03'>03</option>
+        <option value='04'>04</option>
+        <option value='05'>05</option>
+        <option value='06'>06</option>
+        <option value='07'>07</option>
+        <option value='08'>08</option>
+        <option value='09'>09</option>
+        <option value='10'>10</option>
+        <option value='11'>11</option>
+        <option value='12'>12</option>
+      </select>
+    <label for='fmDay'>Day</label>
+    <select name='fmDay'>
+        <option value='01'>01</option>
+        <option value='02'>02</option>
+        <option value='03'>03</option>
+        <option value='04'>04</option>
+        <option value='05'>05</option>
+        <option value='06'>06</option>
+        <option value='07'>07</option>
+        <option value='08'>08</option>
+        <option value='09'>09</option>
+        <option value='10'>10</option>
+        <option value='11'>11</option>
+        <option value='12'>12</option>
+        <option value='13'>13</option>
+        <option value='14'>14</option>
+        <option value='15'>15</option>
+        <option value='16'>16</option>
+        <option value='17'>17</option>
+        <option value='18'>18</option>
+        <option value='19'>19</option>
+        <option value='20'>20</option>
+        <option value='21'>21</option>
+        <option value='22'>22</option>
+        <option value='23'>23</option>
+        <option value='24'>24</option>
+        <option value='25'>25</option>
+        <option value='26'>26</option>
+        <option value='27'>27</option>
+        <option value='28'>28</option>
+        <option value='29'>29</option>
+        <option value='30'>30</option>
+        <option value='31'>31</option>
+      </select>
+    <label for='fmYear'>Year</label>
+    <select name='fmYear'>
+        <option value='2000'>2000</option>
+        <option value='2001'>2001</option>
+        <option value='2002'>2002</option>
+        <option value='2003'>2003</option>
+        <option value='2004'>2004</option>
+        <option value='2005'>2005</option>
+        <option value='2006'>2006</option>
+        <option value='2007'>2007</option>
+        <option value='2008'>2008</option>
+        <option value='2009'>2009</option>
+        <option value='2010'>2010</option>
+        <option value='2011'>2011</option>
+        <option value='2012'>2012</option>
+        <option value='2013'>2013</option>
+        <option value='2014'>2014</option>
+        <option value='2015'>2015</option>
 
-    <label for="#fmIncome">Income Amount</label>
-    <input name="fmIncome" type="text">
+    <label for='fmExpense'>Expense</label>
+    <input name='fmExpense' type='text'>
 
-    <label for="#fmDate">Date</label>
+    <label for='fmCost'>Cost</label>
+    <input name='fmCost' type='text'>
+<!--Drop Down-->
+    <label for='fmCategory'>Category</label>
+    <select name='fmCategory'>
+        <option value='Housing'>Housing</option>
+        <option value='Auto'>Auto</option>
+        <option value='Insurance'>Insurance</option>
+        <option value='Debts'>Debts</option>
+        <option value='Entertainment'>Entertainment</option>
+        <option value='Clothing'>Clothing</option>
+        <option value='Savings'>Savings</option>
+        <option value='Medical/Dental'>Medical/Dental</option>
+        <option value='Miscellaneous'>Miscellaneous</option>
+      </select>
+    </form>
 
-    <label for="#fmMonth">Month</label>
-    <input name="fmMonth" type="">
-
-    <label for="#fmDay">Day</label>
-    <input name="fmDay" type="">
-
-    <label for="#fmYear">Year</label>
-    <input name="fmYear" type="">
-
-    <label for="#fmExpense">Expense</label>
-    <input name="fmExpense" type="text">
-
-    <label for="#fmCost">Cost</label>
-    <input name="fmCost" <!-- type=""> -->
-
-    <label for="#fmCategory">Category</label>
-    <input name="fmCategory" <!-- type="">
-
-    <label for="#fmDate">Date</label>
-    <input name="fmDate" type="">
     <p></p>
-    <button type ="#viewGraph">View Graph</button>
+<!--firgure out how to override defalt of the form (stop from refreshing page when button is pushed)-->
+    <button type ='viewGraph'>View Graph</button>
+    <fieldset>
   </form>
-
-  <div id="table-container">
       <h3>Expense Table</h3>
-        <table id="expenseTable">
-
-      <tr class="head">
-        <th></th>
+        <table id='expenseTable'>
+      <tr class='head'>
         <th>Date</th>
         <th>Category</th>
         <th>Expense</th>
       </tr>
-      <tr class="newTr">
-        <td id="#tdDate">Date</td>
-        <td id="#tdCategory">Category</td>
-        <td id="#tdExpense">Expense</td>
+      <tr class='newTr'>
+        <td id='tdDate'>Date</td>
+        <td id='tdCategory'>Category</td>
+        <td id='tdExpense'>Expense</td>
       </tr>
     </table>
-  </div>
-
-    <button type ="#tableRender">Add To Table</button>
+  </fieldset>
+<!--<a> tag for link-->
+    <button id='tableRender' type='submit'> Add To Table</button>
 
   <footer></footer>
 
-  <script type="text/javascript" src="js/expenseTracker.js"></script>
-  <script type="text/jQuery" src="js/jquery.js"></script>
+  <script type='text/javascript' src='js/expenseTracker.js'></script>
+  <script type='text/javascript' src='js/jquery.js'></script>
 
 </body>
 </html>
