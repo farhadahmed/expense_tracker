@@ -1,0 +1,29 @@
+header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+    }
+
+div  {
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+    }
+
+    #kalliePic {
+      background-image: url(pics/kalliepic1.jpg);
+      background-size: 100%;
+    }
+
+    #farhadPic {
+      background-image: url(pics/farhadpic1.jpg);
+      background-size: 100%;
+    }
+
+    #matejaPic {
+      background-image: url(pics/matejapic2.jpg);
+      background-size: 100%;
+    }
+
