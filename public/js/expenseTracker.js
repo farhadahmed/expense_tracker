@@ -12,9 +12,9 @@ $(document).ready(function() {
 
   $('#tableRender').click(function() {
     var expenses = [];
-    var txnMonth = $("input[name='fmMonth']").val();
-    var txnDay = $("input[name='fmDay']").val();
-    var txnYear = $("input[name='fmYear']").val();
+    var txnMonth = $("select[name='fmMonth']").val();
+    var txnDay = $("select[name='fmDay']").val();
+    var txnYear = $("select[name='fmYear']").val();
     var txnDate = txnMonth + txnDay + txnYear;
 
     var txnExpense = $("input[name='fmExpense']").val();
