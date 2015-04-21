@@ -22,6 +22,15 @@ $(document).ready(function() {
 
     expenses.push(new Transaction(txnDate, txnExpense, txnCost));
     $('<tr><td>'+txnMonth+'/'+txnDay+'/'+txnYear+'</td>' + '<td>'+txnExpense+'</td>' + '<td>$'+txnCost+'</td></tr>').appendTo('#expenseTable');
+
+    //Store info in session storage
+    if (window.sessionstorage) {
+      var table = $('#expenseTable'); //get table element
+      table.text = sessionstorage.getItem($('#expenseTable')); //element populated by sessionStorage
+      table.addEventListener('input', funnction() {
+        sessionStorage.setItem('expenseTable', table.text);
+      }, false);
+    };
   })
 
 });
