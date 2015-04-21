@@ -1,15 +1,17 @@
 $(document).ready(function() {
-  var expenses = [];
 
-  //var txnDate = fmMonth.value + fmDay.value + fmYear.value;
+  $('#newExpenseForm').submit(function(e) {
+    return false;
+  })
+
   var Transaction = function(date, expense, cost){
     this.date = date;
     this.expense = expense;
     this.cost = cost;
-    this.category = category;
   };
 
   $('#tableRender').click(function() {
+    var expenses = [];
     var txnMonth = $("input[name='fmMonth']").val();
     var txnDay = $("input[name='fmDay']").val();
     var txnYear = $("input[name='fmYear']").val();
@@ -19,7 +21,7 @@ $(document).ready(function() {
     var txnCost = $("input[name='fmCost']").val();
 
     expenses.push(new Transaction(txnDate, txnExpense, txnCost));
-    alert(expenses[0]);
+    console.log(expenses[0]);
 
   })
 });
