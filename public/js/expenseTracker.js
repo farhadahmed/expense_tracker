@@ -21,7 +21,7 @@ $(document).ready(function() {
     var txnCost = $("input[name='fmCost']").val();
 
     expenses.push(new Transaction(txnDate, txnExpense, txnCost));
-    console.log(expenses[0]);
+    $('<tr><td>'+txnMonth+'/'+txnDay+'/'+txnYear+'</td>' + '<td>'+txnExpense+'</td>' + '<td>'+txnCost+'</td></tr>').appendTo('#expenseTable');
   })
 
 });
