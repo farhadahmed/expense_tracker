@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $('#newExpenseForm').submit(function(e) {
+  $('#expenseForm').submit(function(e) {
     return false;
   })
 
