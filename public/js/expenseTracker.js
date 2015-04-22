@@ -27,9 +27,11 @@ $(document).ready(function() {
     if (window.sessionstorage) {
       var table = $('#expenseTable'); //get table element
       table.text = sessionstorage.getItem($('#expenseTable')); //element populated by sessionStorage
-      table.addEventListener('input', funnction() {
+      table.addEventListener('input', function() {
         sessionStorage.setItem('expenseTable', table.text);
       }, false);
+    } else {
+      alert('Sorry. Your browser does not support session storage.');
     };
   })
 
