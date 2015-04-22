@@ -1,10 +1,10 @@
 $(document).ready(function() {
   var expenses = [];
-  var i = 0;
+  var i = 0; //index created for adding user input to session storage
   var txnMonth, txnDay, txnYear, txnDate;
 
-  $('#expenseForm').submit(function(e) {
-    return false;
+  $('#expenseForm').submit(function(e) { //override form default so it
+    return false;                        //doesn't refresh with submit.
   })
 
   var Transaction = function(date, expense, cost){
