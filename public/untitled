@@ -1,0 +1,15 @@
+.kalliePic  {
+    float: left;
+    margin-right: 200px;
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    }
+
+    .kallieInfo  {
+
+    float: right;
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    }
