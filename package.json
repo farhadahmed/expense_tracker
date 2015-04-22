@@ -1,0 +1,22 @@
+{
+  "name": "expenseTracker",
+  "version": "1.0.0",
+  "description": "This web app will allow users to input data about expenses they have incurred and will then use that data to output a table of their expenses as well as output a line graph and pie chart showing the user how much they have spent and on what kinds of goods/services.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/farhadahmed/expense_tracker.git"
+  },
+  "author": "farhadahmed2007@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farhadahmed/expense_tracker/issues"
+  },
+  "homepage": "https://github.com/farhadahmed/expense_tracker",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
+}
