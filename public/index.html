@@ -13,23 +13,28 @@
     </head>
     <body>
       <div class="header">
-        <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-          <a class="pure-menu-heading" href="">Home</a>
-          <ul class="pure-menu-list">
-            <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">About Us</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Utilities</a></li>
-          </ul>
-        </div>
-      </div>
-      </br>
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading">Expense Tracker Pro</a>
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Links</a></li>
+        </ul>
+    </div>
+</div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
       <div id='expense-form'>
-      <h1>Expense Tracker Pro</h1>
       <fieldset>
         <legend>Input Expenditures & Income</legend>
         <div id='expense-form'>
           <form id='expenseForm'>
             <div class='fm-income'>
-              <label for='fmIncome'>Income Amount</label>
+              <label for='fmIncome'>Income Amount:</label>
               <input name='fmIncome' type='text' placeholder='Income Amount'>
             </div>
             <p>
@@ -104,7 +109,7 @@
               </select>
             </p>
             <p><label for='fmExpense'>Item or Service:</label>
-              <input name='fmExpense' type='text' placeholder='Item or Service'>
+              <input name='fmExpense' type='text'placeholder='Item or Service'>
             </p>
             <label for='fmCategory'>Category:</label>
             <select name='fmCategory'>
@@ -126,7 +131,7 @@
             <button id='tableRender' type='submit'>Add To Table</button>
             </br>
           </form>
-
+           </fieldset>
       </div>
       </br>
       <center>
@@ -138,14 +143,19 @@
         </tr>
       </table>
       </br>
-      </br>
-      <button id ='viewGraph'>View Graph</button>
+      <button id ='viewGraph' type='submit'>View Graph</button>
+    </br>
+  </br>
+</br>
     </center>
-      </fieldset>
-      <div id="wrap">
-      <div id="main">
+      <footer>
+    <div class='container'>
+      <div class='eight columns'>
+        <h1>| Expense Tracker Pro | design & content copyright 2015 |</h1>
       </div>
-      <div id='footer'>copyright 2015 | design content</footer></div>
+      </div>
+  </footer>
+
       <script type='text/javascript' src='js/expenseTracker.js'></script>
     </body>
   </html>
