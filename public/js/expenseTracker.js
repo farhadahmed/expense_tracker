@@ -37,6 +37,7 @@ $(document).ready(function() {
       sessionStorage.setItem('table', $("#expenseTable"));
 
 
+
       //table.text = sessionstorage.getItem($('#expenseTable')); //element populated by sessionStorage
       //table.addEventListener('input', function() {
       //  sessionStorage.setItem('expenseTable', table.text);
