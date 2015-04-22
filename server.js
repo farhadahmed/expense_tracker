@@ -9,6 +9,7 @@ app.get('/secret', function(request, response) { //All requests have a verb (suc
   response.send('You think you\'re sooooo clever!'); //send doesn't send immediately. The response gets built and the web server sends it back to the browser.
 })
 
+
 app.use(function(request, response, next) { //Function is a callback (it's not being run immediately; only when it can't find something).
   response.status(404).sendFile(__dirname + '/public/404.html');
 });
