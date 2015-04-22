@@ -1,133 +1,151 @@
 <!DOCTYPE html>
 <html>
-<html lang="en">
+  <html lang="en">
+    <head>
+      <meta charset='UTF-8'>
+      <title>Expense Tracker Pro</title>
+      <link rel='stylesheet' type='text/css' href='css/styles.css'>
+      <script type='text/javascript' src='js/jquery.js'></script>
+      <link rel='stylesheet' href='http://yui.yahooapis.com/pure/0.6.0/pure-min.css'>
+      <link rel='stylesheet' href='http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css'>
+      <link rel='stylesheet' href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
+      <link rel='stylesheet' href='css/layouts/marketing.css'>
+    </head>
+    <body>
+      <div class="header">
+        <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+          <a class="pure-menu-heading" href="">Home</a>
+          <ul class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">About Us</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Utilities</a></li>
+          </ul>
+        </div>
+      </div>
+      </br>
+      <div id='expense-form'>
+      <h1>Expense Tracker Pro</h1>
+      <fieldset>
+        <legend>Input Expenditures & Income</legend>
+        <div id='expense-form'>
+          <form id='expenseForm'>
+            <div class='fm-income'>
+              <label for='fmIncome'>Income Amount</label>
+              <input name='fmIncome' type='text' placeholder='Income Amount'>
+            </div>
+            <p>
+              Purchase Date:
+              <label for='fmMonth'>M</label>
+              <select name='fmMonth'>
+                <option value='01'>01</option>
+                <option value='02'>02</option>
+                <option value='03'>03</option>
+                <option value='04'>04</option>
+                <option value='05'>05</option>
+                <option value='06'>06</option>
+                <option value='07'>07</option>
+                <option value='08'>08</option>
+                <option value='09'>09</option>
+                <option value='10'>10</option>
+                <option value='11'>11</option>
+                <option value='12'>12</option>
+              </select>
+              <label for='fmDay'>D</label>
+              <select name='fmDay'>
+                <option value='01'>01</option>
+                <option value='02'>02</option>
+                <option value='03'>03</option>
+                <option value='04'>04</option>
+                <option value='05'>05</option>
+                <option value='06'>06</option>
+                <option value='07'>07</option>
+                <option value='08'>08</option>
+                <option value='09'>09</option>
+                <option value='10'>10</option>
+                <option value='11'>11</option>
+                <option value='12'>12</option>
+                <option value='13'>13</option>
+                <option value='14'>14</option>
+                <option value='15'>15</option>
+                <option value='16'>16</option>
+                <option value='17'>17</option>
+                <option value='18'>18</option>
+                <option value='19'>19</option>
+                <option value='20'>20</option>
+                <option value='21'>21</option>
+                <option value='22'>22</option>
+                <option value='23'>23</option>
+                <option value='24'>24</option>
+                <option value='25'>25</option>
+                <option value='26'>26</option>
+                <option value='27'>27</option>
+                <option value='28'>28</option>
+                <option value='29'>29</option>
+                <option value='30'>30</option>
+                <option value='31'>31</option>
+              </select>
+              <label for='fmYear'>Y</label>
+              <select name='fmYear'>
+                <option value='2000'>2000</option>
+                <option value='2001'>2001</option>
+                <option value='2002'>2002</option>
+                <option value='2003'>2003</option>
+                <option value='2004'>2004</option>
+                <option value='2005'>2005</option>
+                <option value='2006'>2006</option>
+                <option value='2007'>2007</option>
+                <option value='2008'>2008</option>
+                <option value='2009'>2009</option>
+                <option value='2010'>2010</option>
+                <option value='2011'>2011</option>
+                <option value='2012'>2012</option>
+                <option value='2013'>2013</option>
+                <option value='2014'>2014</option>
+                <option value='2015'>2015</option>
+              </select>
+            </p>
+            <p><label for='fmExpense'>Item or Service:</label>
+              <input name='fmExpense' type='text' placeholder='Item or Service'>
+            </p>
+            <label for='fmCategory'>Category:</label>
+            <select name='fmCategory'>
+              <option value='Housing'>Housing</option>
+              <option value='Auto'>Auto</option>
+              <option value='Insurance'>Insurance</option>
+              <option value='Debts'>Debts</option>
+              <option value='Entertainment'>Entertainment</option>
+              <option value='Clothing'>Clothing</option>
+              <option value='Savings'>Savings</option>
+              <option value='Medical/Dental'>Medical/Dental</option>
+              <option value='Miscellaneous'>Miscellaneous</option>
+            </select>
+            </p>
+            <label for='fmCost'>Cost:</label>
+            <input name='fmCost' type='text' placeholder='Cost'>
+            </br>
+            </br>
+            <button id='tableRender' type='submit'>Add To Table</button>
+            </br>
+          </form>
 
-<head>
-  <meta charset='UTF-8'>
-  <title>Expense Tracker Pro</title>
-  <link rel='stylesheet' type='text/css' href='css/styles.css'>
-  <script type="text/javascript" src="js/jquery.js"></script>
-
-</head>
-
-<body>
-   <div id='expense-form'>
-    <h1>Expense Tracker Pro</h1>
-<fieldset>
-    <legend>Input Expenditures & Income</legend>
-<div id='expense-form'>
-<form id='expenseForm'>
-
-  <div class='fm-income'>
-    <label for='fmIncome'>Income Amount</label>
-    <input name='fmIncome' type='text' placeholder='Income Amount'>
-  </div>
-
-    <p>Purchase Date:
-    <label for='fmMonth'>M</label>
-    <select name='fmMonth'>
-        <option value='01'>01</option>
-        <option value='02'>02</option>
-        <option value='03'>03</option>
-        <option value='04'>04</option>
-        <option value='05'>05</option>
-        <option value='06'>06</option>
-        <option value='07'>07</option>
-        <option value='08'>08</option>
-        <option value='09'>09</option>
-        <option value='10'>10</option>
-        <option value='11'>11</option>
-        <option value='12'>12</option>
-      </select>
-    <label for='fmDay'>D</label>
-    <select name='fmDay'>
-        <option value='01'>01</option>
-        <option value='02'>02</option>
-        <option value='03'>03</option>
-        <option value='04'>04</option>
-        <option value='05'>05</option>
-        <option value='06'>06</option>
-        <option value='07'>07</option>
-        <option value='08'>08</option>
-        <option value='09'>09</option>
-        <option value='10'>10</option>
-        <option value='11'>11</option>
-        <option value='12'>12</option>
-        <option value='13'>13</option>
-        <option value='14'>14</option>
-        <option value='15'>15</option>
-        <option value='16'>16</option>
-        <option value='17'>17</option>
-        <option value='18'>18</option>
-        <option value='19'>19</option>
-        <option value='20'>20</option>
-        <option value='21'>21</option>
-        <option value='22'>22</option>
-        <option value='23'>23</option>
-        <option value='24'>24</option>
-        <option value='25'>25</option>
-        <option value='26'>26</option>
-        <option value='27'>27</option>
-        <option value='28'>28</option>
-        <option value='29'>29</option>
-        <option value='30'>30</option>
-        <option value='31'>31</option>
-      </select>
-    <label for='fmYear'>Y</label>
-    <select name='fmYear'>
-        <option value='2000'>2000</option>
-        <option value='2001'>2001</option>
-        <option value='2002'>2002</option>
-        <option value='2003'>2003</option>
-        <option value='2004'>2004</option>
-        <option value='2005'>2005</option>
-        <option value='2006'>2006</option>
-        <option value='2007'>2007</option>
-        <option value='2008'>2008</option>
-        <option value='2009'>2009</option>
-        <option value='2010'>2010</option>
-        <option value='2011'>2011</option>
-        <option value='2012'>2012</option>
-        <option value='2013'>2013</option>
-        <option value='2014'>2014</option>
-        <option value='2015'>2015</option>
-      </select></p>
-    <label for='fmExpense'>Item or Service:</label>
-      <input name='fmExpense' type='text' placeholder='Item or Service'>
-    <label for='fmCategory'>Category:</label>
-      <select name='fmCategory'>
-        <option value='Housing'>Housing</option>
-        <option value='Auto'>Auto</option>
-        <option value='Insurance'>Insurance</option>
-        <option value='Debts'>Debts</option>
-        <option value='Entertainment'>Entertainment</option>
-        <option value='Clothing'>Clothing</option>
-        <option value='Savings'>Savings</option>
-        <option value='Medical/Dental'>Medical/Dental</option>
-        <option value='Miscellaneous'>Miscellaneous</option>
-    </select></p>
-    <label for='fmCost'>Cost:</label>
-    <input name='fmCost' type='text' placeholder='Cost'>
-    <button id='tableRender' type='submit'>Add To Table</button>
-  </br>
-  </form>
-  </fieldset>
-</div>
-</br>
-  <strong>
-  <table id='expenseTable'>
-    <tr class='head'>
-      <th>Date</th>
-      <th>Expense</th>
-      <th>Cost</th>
-      </tr>
-  </table>
-<button type ='viewGraph'>View Graph</button>
-</fieldset>
-<p>Track, manage and understand your finances in real-time with Expense Tracker Pro</p>
-<footer>copyright 2015] design & content </footer>
-
-<script type='text/javascript' src='js/expenseTracker.js'></script>
-
-</body>
-</html>
+      </div>
+      </br>
+      <center>
+      <table id='expenseTable'>
+        <tr class='head'>
+          <th>Date</th>
+          <th>Expense</th>
+          <th>Cost</th>
+        </tr>
+      </table>
+      </br>
+      </br>
+      <button id ='viewGraph'>View Graph</button>
+    </center>
+      </fieldset>
+      <div id="wrap">
+      <div id="main">
+      </div>
+      <div id='footer'>copyright 2015 | design content</footer></div>
+      <script type='text/javascript' src='js/expenseTracker.js'></script>
+    </body>
+  </html>
