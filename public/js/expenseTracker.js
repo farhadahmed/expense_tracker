@@ -29,6 +29,7 @@ $(document).ready(function() {
 
     if (window.sessionStorage) {
       //store info in session storage
+      sessionStorage.setItem('incomeAmt', $("input[name='fmIncome']").val());
       sessionStorage.setItem('txnMonth'+i, $("select[name='fmMonth']").val());
       sessionStorage.setItem('txnDay'+i, $("select[name='fmDay']").val());
       sessionStorage.setItem('txnYear'+i, $("select[name='fmYear']").val());

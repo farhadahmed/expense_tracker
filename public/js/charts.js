@@ -78,19 +78,23 @@ $(document).ready(function() {
   var pieData = [
   {
     value: 20,
-    color: '#878BB6'
+    color: '#878BB6',
+    label: 'Housing'
   },
   {
     value: 40,
-    color: '#4ACAB4'
+    color: '#4ACAB4',
+    label: 'Auto'
   },
   {
     value: 10,
-    color: '#FF8153'
+    color: '#FF8153',
+    labe: 'Insurance'
   },
   {
     value: 30,
-    color: '#FFEA88'
+    color: '#FFEA88',
+    label: 'Debts'
   }
   ];
   var pieOptions = {
