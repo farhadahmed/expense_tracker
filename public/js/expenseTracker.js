@@ -2,8 +2,15 @@ $(document).ready(function() {
   var expenses;
   var i = 0; //index created for adding user input to session storage
   var txnMonth, txnDay, txnYear, txnDate, txnCategory;
-  var catAuto = [];
   var catHousing = [];
+  var catAuto = [];
+  var catInsurance = [];
+  var catDebts = [];
+  var catEntertainment = [];
+  var catClothing = [];
+  var catSavings = [];
+  var catMedical = [];
+  var catMisc = [];
 
   $('#expenseForm').submit(function(e) { //override form default so it
     return false;                        //doesn't refresh with submit.
@@ -33,13 +40,35 @@ $(document).ready(function() {
     //Push input values into an array of objects
     expenses.push(new Transaction(txnDate, txnExpense, txnCategory, txnCost));
 
-    //Push to right category array
+    //Push cost value to correct category array
     switch(txnCategory) {
       case 'Auto':
         catAuto.push(txnCost);
         break;
       case 'Housing':
         catHousing.push(txnCost);
+        break;
+      case 'Insurance':
+        catInsurance.push(txnCost);
+        break;
+      case 'Debts':
+        catDebts.push(txnCost);
+        break;
+      case 'Entertainment':
+        catEntertainment.push(txnCost);
+        break;
+      case 'Clothing':
+        catClothing.push(txnCost);
+        break;
+      case 'Savings':
+        catSavings.push(txnCost);
+        break;
+      case 'Medical/Dental':
+        catMedical.push(txnCost);
+        break;
+      case 'Miscellaneous':
+        catMisc.push(txnCost);
+        break;
     }
 
     //Render new row in table with buttonClick
@@ -58,6 +87,13 @@ $(document).ready(function() {
       //store arrays of categories in session storage
       sessionStorage.setItem('sessionCatAuto', catAuto);
       sessionStorage.setItem('sessionCatHousing', catHousing);
+      sessionStorage.setItem('sessionCatInsurance', catInsurance);
+      sessionStorage.setItem('sessionCatDebts', catDebts);
+      sessionStorage.setItem('sessionCatEntertainment', catEntertainment);
+      sessionStorage.setItem('sessionCatClothing', catClothing);
+      sessionStorage.setItem('sessionCatSavings', catSavings);
+      sessionStorage.setItem('sessionCatMedical', catMedical);
+      sessionStorage.setItem('sessionCatMisc', catMisc);
 
     } else {
       alert('Sorry. Your browser does not support session storage.');
