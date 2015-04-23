@@ -34,14 +34,6 @@ $(document).ready(function() {
       sessionStorage.setItem('txnYear'+i, $("select[name='fmYear']").val());
       sessionStorage.setItem('txnExpense'+i, $("input[name='fmExpense']").val());
       sessionStorage.setItem('txnCost'+i, $("input[name='fmCost']").val());
-
-      //Output stored data
-      alert('txnMonth'+i+' = ' + window.sessionStorage.getItem('txnMonth'+[i]));
-      alert('txnDay'+i+' = ' + window.sessionStorage.getItem('txnDay'+[i]));
-      alert('txnYear'+i+' = ' + window.sessionStorage.getItem('txnYear'+[i]));
-      alert('txnExpense'+i+' = ' + window.sessionStorage.getItem('txnExpense'+[i]));
-      alert('txnCost'+i+' = ' + window.sessionStorage.getItem('txnCost'+[i]));
-
     } else {
       alert('Sorry. Your browser does not support session storage.');
     };
