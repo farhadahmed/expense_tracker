@@ -13,52 +13,36 @@
       <link href='http://fonts.googleapis.com/css?family=Oswald:400,700|Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
       <script type="text/javascript" src="js/indexCover.js"></script>
   </head>
-  <div class="main-content">
 
   <body>
       <div class="splash fade-in">
         <h1 class="splash-title fade-in">Expense Tracker Pro</h1>
         <a href="#" class="splash-arrow fade-in"><img src="file:///Users/kalliepleis/Desktop/expense_tracker/img/down-arrow.png" alt=""></a>
       </div>
-
       <div class="wrapper">
-
       <header class="cf">
       <div class="header">
       <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-
+        <a class="pure-menu-heading"></a>
         <ul class="pure-menu-list">
-
-            <li class="pure-menu-item">
-            <a href=""><span class="pure-menu-link"><img src="file:///Users/kalliepleis/Desktop/expense_tracker/Icons/Home.png"</li></a>
-
-            <li class="pure-menu-item">
-            <a href=""><span class="pure-menu-link"><img src="file:///Users/kalliepleis/Desktop/expense_tracker/Icons/Contact.png"</li></a>
-
-            <li class="pure-menu-item">
-            <a href=""><span class="pure-menu-link"><img src="file:///Users/kalliepleis/Desktop/expense_tracker/Icons/Facebook.png"</li></a>
-
-            <li class="pure-menu-item">
-            <a href=""><span class="pure-menu-link"><img src="file:///Users/kalliepleis/Desktop/expense_tracker/Icons/Twitter.png"</li></a>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Links</a></li>
         </ul>
       </div>
     </div>
   </header>
 </br>
 </br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+<section id="main-content">
       <div id='expense-form'>
       <fieldset>
         <legend>Input Expenditures & Income</legend>
+        <div id='expense-form'>
           <form id='expenseForm'>
-
+            <div class='fm-income'>
               <label for='fmIncome'>Income Amount:</label>
               <input name='fmIncome' type='text' placeholder='Income Amount'>
+            </div>
             <p>
               Purchase Date:
               <label for='fmMonth'>M</label>
@@ -148,10 +132,13 @@
             </p>
             <label for='fmCost'>Cost:</label>
             <input name='fmCost' type='text' placeholder='Cost'>
+            </br>
+            </br>
             <button id='tableRender' type='submit'>Add To Table</button>
             </br>
           </form>
            </fieldset>
+
       <div id="dialog" title="Basic dialog">
       </br>
       <center>
