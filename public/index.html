@@ -9,14 +9,23 @@
       <link rel='stylesheet' href='http://yui.yahooapis.com/pure/0.6.0/pure-min.css'>
       <link rel='stylesheet' href='http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css'>
       <link rel='stylesheet' href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
-      <link rel='stylesheet' href='css/layouts/marketing.css'>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href='http://fonts.googleapis.com/css?family=Oswald:400,700|Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
+
     </head>
     <body>
+      <div class="splash fade-in">
+    <h1 class="splash-title fade-in">Expense Tracker Pro</h1>
+    <a href="#" class="splash-arrow fade-in"><img src="file:///Users/kalliepleis/Desktop/expense_tracker/img/down-arrow.png" alt=""></a>
+  </div>
+  <div class="wrapper">
+  <header class="cf">
+      <h1><a href="#">Expense Tracker Pro</a></h1>
+  </header>
       <div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
         <a class="pure-menu-heading">Expense Tracker Pro</a>
         <ul class="pure-menu-list">
-            <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
             <li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
             <li class="pure-menu-item"><a href="#" class="pure-menu-link">Links</a></li>
         </ul>
@@ -132,7 +141,8 @@
             </br>
           </form>
            </fieldset>
-      </div>
+
+      <div id="dialog" title="Basic dialog">
       </br>
       <center>
       <table id='expenseTable'>
@@ -143,18 +153,25 @@
         </tr>
       </table>
       </br>
-      <a herf='charts.html'><button id ='viewGraph' type='submit'>View Graph</button></a>
+      <a href='charts.html'><button id ='viewGraph' type='submit'>View Graph</button></a>
     </br>
   </br>
 </br>
     </center>
+
       <footer>
     <div class='container'>
       <div class='eight columns'>
         <h1>| Expense Tracker Pro | design & content copyright 2015 |</h1>
       </div>
       </div>
+      <section id="main-content">
+
+  </section>
   </footer>
+  </div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
       <script type='text/javascript' src='js/expenseTracker.js'></script>
     </body>
