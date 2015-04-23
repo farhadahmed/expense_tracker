@@ -1,18 +1,36 @@
+body {
+    background-color: #2d3e50;
+    font-family: Helvetica, Arial, Verdana;
+}
+
 header {
-    background-color:black;
+    background-color: #2d3e50;
     color:white;
     text-align:center;
     padding:3px;
     width: 100%;
+    font-size: 18px;
+    text-shadow: -2px -3px 3px #666666;
+    letter-spacing: 0.15em;
+    font-style: bold;
     }
 
-.container
-{
+
+
+.container {
    display: inline-flex;
    width: 100%;
-   border: 2px solid black;
+   border: 2px solid #2d3e50;
    padding: 1px;
-}
+   background-color: #90b4d6;
+   font-size: 18px;
+   text-shadow: -1px -1px 1px #666666;
+   letter-spacing: 0.10em;
+   font-style: bold;
+   position: relative;
+   /*float: right;*/
+   }
+
 
 .pad
 {
@@ -24,6 +42,8 @@ header {
    text-align: center;
    margin: auto;
    font-size: 30px;
+   float: right;
+   width: 600px;
 
 }
 
