@@ -17,11 +17,12 @@ header {
 
 
 
-.container {
-   display: inline-flex;
+.small_container {
+   display: flex;
+   /*display was flex*/
    width: 100%;
    border: 2px solid #2d3e50;
-   padding: 1px;
+   padding: 0px;
    background-color: #90b4d6;
    font-size: 18px;
    text-shadow: -1px -1px 1px #666666;
