@@ -57,10 +57,10 @@ $(document).ready(function() {
 
     {
 
-      fillColor : "rgba(172,194,132,0.4)",
-      strokeColor : "#ACC26D",
+      fillColor : "rgba(2,136,255,0.5)",
+      strokeColor : "blue",
       pointColor : "#fff",
-      pointStrokeColor : "#9DB86D",
+      pointStrokeColor : "#00006B",
       data : [
       window.sessionStorage.getItem('txnCost1'),
       window.sessionStorage.getItem('txnCost2'),

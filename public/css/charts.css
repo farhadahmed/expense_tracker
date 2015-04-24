@@ -1,6 +1,30 @@
+body {
+  background-image: url("../img/splash-bg.jpg");
+}
+h1 {
+  text-align: center;
+  font-size: 5em;
+}
 table {
   margin: auto;
+  border-spacing: 0.2em;
+  width: 80%;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 2em;
+}
+th {
+  color: #fff;
+  background-color: #90b4d6;
+  text-shadow: -1px -1px 1px #666666;
+  letter-spacing: 0.15em;
+}
+td {
+  background-color: #e0e9f0;
 }
 section {
   text-align: center;
+}
+#line-graph {
+  background-color: #e0e9f0;
 }
