@@ -222,52 +222,52 @@ $(document).ready(function() {
     var pieData = [
     {
       value: (100/(txnIncome/housingTotal)),
-      color: '#ADD6FF',
+      color: '#CCFFFF',
       label: 'Housing'
     },
     {
       value: (100/(txnIncome/autoTotal)),
-      color: '#70B8FF',
+      color: '#C94D4D',
       label: 'Auto'
     },
     {
       value: (100/(txnIncome/insuranceTotal)),
-      color: '#99CCFF',
+      color: '#C2A385',
       label: 'Insurance'
     },
     {
       value: (100/(txnIncome/debtsTotal)),
-      color: '#297ACC',
+      color: '#B20000',
       label: 'Debts'
     },
     {
       value: (100/(txnIncome/entertainmentTotal)),
-      color: '#1F5C99',
+      color: '#B800E6',
       label: 'Entertainment'
     },
     {
       value: (100/(txnIncome/clothingTotal)),
-      color: '#143D66',
+      color: '#0066FF',
       label: 'Clothing'
     },
     {
       value: (100/(txnIncome/savingsTotal)),
-      color: '#3399FF',
+      color: '#66FF99',
       label: 'Savings'
     },
     {
       value: (100/(txnIncome/medicalTotal)),
-      color: '#85C2FF',
+      color: '#FF0000',
       label: 'Medical/Dental'
     },
     {
       value: (100/(txnIncome/miscTotal)),
-      color: '#5CADFF',
+      color: '#CDCDCC',
       label: 'Miscellaneous'
     },
     {
       value: 100*((txnIncome - miscTotal - medicalTotal - clothingTotal - entertainmentTotal - debtsTotal - insuranceTotal - autoTotal - housingTotal)/txnIncome),
-      color: '#5CADFF',
+      color: '#66FF99',
       label: 'Unspent Income'
     }
     ];
