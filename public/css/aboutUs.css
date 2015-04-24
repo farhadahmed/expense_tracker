@@ -72,19 +72,19 @@ article.active {
 }
 
 #kalliePic {
-  background-image: url(../../img/kalliepic1-400x400.jpeg);
+  background-image: url(../img/kalliepic1-400x400.jpeg);
   background-repeat: no-repeat;
   background-size: 400px 400px;
 }
 
 #farhadPic {
-  background-image: url(../..img/farhadpic1-400x400.jpg);
+  background-image: url(..img/farhadpic1-400x400.jpg);
   background-repeat: no-repeat;
   background-size: 400px 400px;
 }
 
 #matejaPic {
-  background-image: url(../../img/matejapic2-400x400.jpeg);
+  background-image: url(../img/matejapic2-400x400.jpeg);
   background-repeat: no-repeat;
   background-size: 400px 400px;
 /*portions of this code were modified and adapted from */

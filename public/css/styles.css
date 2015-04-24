@@ -2,7 +2,7 @@ body {
         font-family: Arial, Verdana, sans-serif;
         font-size: 90%;
         position: inline-block;
-        background-image: url("../../img/splash-bg.jpg");
+        background-image: url("../img/splash-bg.jpg");
         background-size: cover;
         color: #666666;}
 fieldset {
@@ -147,7 +147,7 @@ hr {
     -moz-animation-duration:0.3s;
     animation-duration:0.3s;}
 .splash {
-  background: url('../../img/splash-bg.jpg') center center;
+  background: url('../img/splash-bg.jpg') center center;
   position: fixed;
   top: 0;
   right: 0;
