@@ -264,6 +264,11 @@ $(document).ready(function() {
       value: (100/(txnIncome/miscTotal)),
       color: '#5CADFF',
       label: 'Miscellaneous'
+    },
+    {
+      value: 100*((txnIncome - miscTotal - medicalTotal - clothingTotal - entertainmentTotal - debtsTotal - insuranceTotal - autoTotal - housingTotal)/txnIncome),
+      color: '#5CADFF',
+      label: 'Unspent Income'
     }
     ];
     var pieOptions = {
