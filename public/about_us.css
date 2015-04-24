@@ -90,3 +90,8 @@ article.active {
 /*portions of this code were modified and adapted from */
 /*http://tympanus.net/codrops/2011/12/14/item-blur-effect-with-css3-and-jquery/*/
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
