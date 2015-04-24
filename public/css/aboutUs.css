@@ -3,6 +3,10 @@ body {
     font-family: Helvetica, Arial, Verdana;
 }
 
+p {
+  white-space: pre;
+}
+
 header {
     background-color: #2d3e50;
     color:white;
