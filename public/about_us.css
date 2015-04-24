@@ -25,9 +25,9 @@ article {
 }
 
 article.blur {
-    box-shadow: 0px 0px 20px 10px rgba(255,255,255,1);
+    /*box-shadow: 0px 0px 20px 10px rgba(255,255,255,1);*/
     transform: scale (0.9);
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 article.active {
@@ -87,4 +87,6 @@ article.active {
   background-image: url(pics/matejapic2-400x400.jpeg);
   background-repeat: no-repeat;
   background-size: 400px 400px;
+/*portions of this code were modified and adapted from */
+/*http://tympanus.net/codrops/2011/12/14/item-blur-effect-with-css3-and-jquery/*/
 }

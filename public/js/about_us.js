@@ -7,7 +7,7 @@ $articles.on('mouseenter', function (event) {
 
       if ($article.hasClass('active')) return false;
 
-      $article.not ($article.removeClass('blur').addClass('active'))
+      $articles.not ($article.removeClass('blur').addClass('active'))
         .removeClass('active')
         .addClass('blur');
 
@@ -21,4 +21,6 @@ $main.on('mouseleave', function(event) {
     $articles.removeClass('active blur');
 
 });
+/*portions of this code were modified and adapted from*/
+/*http://tympanus.net/codrops/2011/12/14/item-blur-effect-with-css3-and-jquery/*/
 
